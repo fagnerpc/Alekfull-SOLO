@@ -1,0 +1,112 @@
+<theme>
+<formatVersion>4</formatVersion>
+
+
+<view name="system, basic, detailed">
+      <image name="art" extra="true">
+         <path>./../assets/arts2/${system.theme}.jpg</path>
+      </image>   
+</view>
+
+ <view name="grid">
+      <image name="art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./../assets/arts2/${system.theme}.jpg</path>
+         <zIndex>5</zIndex>
+      </image>
+</view>
+	  
+   <customView name="Boxes">
+	      <image name="art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./../assets/arts2/${system.theme}.jpg</path>
+         <zIndex>5</zIndex>
+      </image>
+	   </customView>
+	   
+   <customView name="Boxes + details">
+	      <image name="art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./../assets/arts2/${system.theme}.jpg</path>
+         <zIndex>5</zIndex>
+      </image>
+	   </customView>
+	   
+   <customView name="Boxes + Video">
+	      <image name="art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./../assets/arts2/${system.theme}.jpg</path>
+         <zIndex>5</zIndex>
+      </image>
+	   </customView>	   
+
+   <customView name="Carousel">
+	      <image name="art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./../assets/arts2/${system.theme}.jpg</path>
+         <zIndex>5</zIndex>
+      </image>
+	   </customView>
+
+   <customView name="Carousel Default">
+	      <image name="art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./../assets/arts2/${system.theme}.jpg</path>
+         <zIndex>5</zIndex>
+      </image>
+	   </customView>
+	   
+   <customView name="Carousel + Details">
+	      <image name="art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./../assets/arts2/${system.theme}.jpg</path>
+         <zIndex>5</zIndex>
+      </image>
+	   </customView>	   
+	   
+   <customView name="Tiles">
+	      <image name="art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./../assets/arts2/${system.theme}.jpg</path>
+         <zIndex>5</zIndex>
+      </image>
+	   </customView>
+
+   <customView name="Tiles + Video">
+	      <image name="art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./../assets/arts2/${system.theme}.jpg</path>
+         <zIndex>5</zIndex>
+      </image>
+	   </customView>
+
+   <customView name="Tiles + Video + Marquee">
+	      <image name="art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./../assets/arts2/${system.theme}.jpg</path>
+         <zIndex>5</zIndex>
+      </image>
+	   </customView>	   
+	   
+
+</theme>

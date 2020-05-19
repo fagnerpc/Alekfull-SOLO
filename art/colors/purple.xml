@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>4</formatVersion>
+  <variables>
+    <baseColor>7314ea</baseColor>
+    <gradientEndColor>33036f</gradientEndColor>
+    <centerFadeColor>40609b50</centerFadeColor>
+    <bottomBarColor>cd5dfc</bottomBarColor>
+    <glowColor>3060Ab20</glowColor>
+    <systemInfoColor>FAFAFFB0</systemInfoColor>
+		<image name="background2" extra="true">
+			<!--<tile>true</tile>-->
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/filtre.png</path>
+		</image>
+  </variables>
+</theme>

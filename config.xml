@@ -1,0 +1,13 @@
+<theme>
+    <formatVersion>4</formatVersion>
+	<include subset="colorset" name="1-Default BG">./colorsets/default.xml</include>
+	<include subset="colorset" name="2-Dark BG">./colorsets/dark.xml</include>
+		
+	<include subset="iconset" name="1-Default">./iconsets/snes.xml</include>
+	<include subset="iconset" name="2-ARCADE">./iconsets/arcade.xml</include>
+	
+	<include subset="systemview" name="Horizontal Menu">./systemview/1.xml</include>
+	<include subset="systemview" name="Vertical Carrossel">./systemview/2.xml</include>
+	<include subset="systemview" name="Vertical Menu">./systemview/3.xml</include>
+	
+</theme>

@@ -1,0 +1,53 @@
+<theme>
+  <formatVersion>4</formatVersion>
+  <feature supported="carousel">
+  <view name="system">
+    <carousel name="systemcarousel">
+      <type>vertical</type>
+      <pos>0.15 -0.080</pos>
+      <size>1 1</size>
+      <color>ffffff00</color>
+      <logoScale>1</logoScale>
+      <logoSize>0.5 1</logoSize>
+      <maxLogoCount>1</maxLogoCount>
+      <defaultTransition>instant</defaultTransition>	
+    </carousel>
+    
+   <text name="systemInfo">
+         <pos>-0.052 0.868</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>FFFFFF</color>
+         <alignment>right</alignment>
+         <fontPath>./../_inc/fonts/OpenSans-Bold.ttf</fontPath>
+         <fontSize>0.023</fontSize>
+   </text>
+	  
+   <image name="bar" extra="true">
+         <origin>0 0</origin>
+         <pos>0.565 0.929</pos>
+         <size>0 0</size>
+         <path>./../assets/bar.jpg</path>
+		 <zIndex>42</zIndex>
+   </image> 
+
+   
+   <helpsystem name="help">
+         <fontPath>./../_inc/fonts/OpenSans-Bold.ttf</fontPath>
+         <fontSize>0.019</fontSize>     
+         <pos>0.566 0.942</pos>      
+         <textColor>FFFFFF</textColor>
+   </helpsystem>
+	  
+   <image name="art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+   </image>    
+    
+  <image name="logo">
+    <path>./../assets/logos/$system.png</path>
+  </image>
+    
+  </view>
+  </feature>  
+</theme>
