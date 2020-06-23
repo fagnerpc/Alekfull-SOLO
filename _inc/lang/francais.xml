@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<variables>
+		
+	<langue>fr</langue>
+		
+    <tilesViewName>Vignettes</tilesViewName>
+    <tilesVideoViewName>Miniatures + Video</tilesVideoViewName>
+    <tilesVideoMarqueeViewName>Miniatures + Video + Logos</tilesVideoMarqueeViewName>
+    <basicGridName>Boites</basicGridName>
+    <basicGridDetailsName>Boites + Details</basicGridDetailsName>
+    <basicGridVideoName>Boites + Video</basicGridVideoName>
+    <carouselViewName>Carrousel</carouselViewName>
+    <carouselDefaultViewName>Carrousel Simple</carouselDefaultViewName>
+    <carouselDetailsViewName>Carrousel Detaille</carouselDetailsViewName>
+    <carouselposterViewName>Affiche de Carrousel</carouselposterViewName>	
+    <fanartViewName>Fanart (Standard)</fanartViewName>
+	<fanartvlViewName>Fanart (Video Plein Ecran)</fanartvlViewName>
+	<yes>Oui</yes>
+	<no>Non</no>
+    <none>Aucun</none>
+    <sysmusic>Sur</sysmusic>
+    <nomusic>Aleatoire</nomusic>
+    <silence>Sans Musique de Fond</silence>	
+	<default>Standard</default>
+	<defaultbg>Images darriere-plan Standard</defaultbg>
+	<darkbg>Images de fond sombre</darkbg>
+	<arcade>Arcade</arcade>
+	<horizontal>Menu Horizontal</horizontal>
+	<verticalc>Carrousel Vertical</verticalc>
+	<verticalm>Menu Vertical</verticalm>	
+	<icondef>Icones Standard</icondef>
+    <subset.systemview>Vues systemes</subset.systemview>
+    <subset.colorset>Images darriere-plan</subset.colorset>
+    <subset.iconset>Icones de Menu</subset.iconset>
+    <subset.shader>Shaders de Theme</subset.shader>
+	<subset.music>Musique Systeme</subset.music>
+	</variables>
+	
+</theme>

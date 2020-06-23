@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<variables>
+		
+		<langue>pt</langue>
+		
+    <tilesViewName>Miniaturas</tilesViewName>
+    <tilesVideoViewName>Miniaturas + Video</tilesVideoViewName>
+    <tilesVideoMarqueeViewName>Miniaturas + Video + Logos</tilesVideoMarqueeViewName>
+    <basicGridName>Caixas</basicGridName>
+    <basicGridDetailsName>Caixas + Detalhes</basicGridDetailsName>
+    <basicGridVideoName>Caixas + Video</basicGridVideoName>
+    <carouselViewName>Carrossel</carouselViewName>
+    <carouselDefaultViewName>Carrossel Simples</carouselDefaultViewName>
+    <carouselDetailsViewName>Carrossel Detalhado</carouselDetailsViewName>
+    <carouselposterViewName>Carrossel Poster</carouselposterViewName>	
+    <fanartViewName>Fanart (Padrao)</fanartViewName>
+	<fanartvlViewName>Fanart (Video Tela Cheia)</fanartvlViewName>
+	<yes>Sim</yes>
+	<no>Nao</no>
+    <none>Nenhum</none>
+    <sysmusic>Ligado</sysmusic>
+    <nomusic>Aleatorias</nomusic>
+    <silence>Sem Musicas de Fundo</silence>	
+	<default>Padrao</default>
+	<defaultbg>Imagens de Fundo Padrao</defaultbg>
+	<darkbg>Imagens de Fundo Escuras</darkbg>
+	<arcade>Fliperama</arcade>
+	<horizontal>Menu Horizontal</horizontal>
+	<verticalc>Carrossel Vertical</verticalc>
+	<verticalm>Menu Vertical</verticalm>	
+	<icondef>Icones Padrao</icondef>
+    <subset.systemview>Vistas de Sistemas</subset.systemview>
+    <subset.colorset>Imagens de Fundo</subset.colorset>
+    <subset.iconset>Icones do Menu</subset.iconset>
+    <subset.shader>Shaders do Tema</subset.shader>
+	<subset.music>Musicas dos Sistemas</subset.music>
+	</variables>
+	
+</theme>

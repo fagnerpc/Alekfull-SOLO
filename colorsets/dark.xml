@@ -4,6 +4,7 @@
 
 <view name="system, basic, detailed">
       <image name="art" extra="true">
+         <path>./../assets/arts2/default.jpg</path>
          <path>./../assets/arts2/${system.theme}.jpg</path>
       </image>   
 </view>

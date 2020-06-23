@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<variables>
+		
+		<langue>en</langue>
+		
+    <tilesViewName>Tiles</tilesViewName>
+    <tilesVideoViewName>Tiles + Video</tilesVideoViewName>
+    <tilesVideoMarqueeViewName>Tiles + Video + Logos</tilesVideoMarqueeViewName>
+    <basicGridName>Grid</basicGridName>
+    <basicGridDetailsName>Grid + Details</basicGridDetailsName>
+    <basicGridVideoName>Grid + Video</basicGridVideoName>
+    <carouselViewName>Carousel</carouselViewName>
+    <carouselDefaultViewName>Simple Carousel</carouselDefaultViewName>
+    <carouselDetailsViewName>Carousel Detailed</carouselDetailsViewName>
+    <carouselposterViewName>Carousel Poster</carouselposterViewName>	
+    <fanartViewName>Fanart (Default)</fanartViewName>
+	<fanartvlViewName>Fanart (Full Screen Video)</fanartvlViewName>
+	<yes>Yes</yes>
+	<no>No</no>
+    <none>None</none>
+    <sysmusic>On</sysmusic>
+    <nomusic>Random</nomusic>
+    <silence>Without Background Music</silence>	
+	<default>Default</default>
+	<defaultbg>Default Background Images</defaultbg>
+	<darkbg>Dark Background Images</darkbg>
+	<arcade>Arcade</arcade>
+	<horizontal>Horizontal Menu</horizontal>
+	<verticalc>Vertical Carousel</verticalc>
+	<verticalm>Vertical Menu</verticalm>	
+	<icondef>Standard icons</icondef>
+    <subset.systemview>Systems Views</subset.systemview>
+    <subset.colorset>Background Images</subset.colorset>
+    <subset.iconset>Menu Icons</subset.iconset>
+    <subset.shader>Theme Shaders</subset.shader>
+	<subset.music>System Music</subset.music>
+	</variables>
+	
+</theme>
