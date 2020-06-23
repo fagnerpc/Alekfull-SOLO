@@ -11,6 +11,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
 <?xml version="1.0" encoding="UTF-8"?>
 <theme defaultView="Boxes + details">
    <formatVersion>7</formatVersion>
+   <include>./config.xml</include>
    <variables>
       <baseColor>8b0000</baseColor>
       <gradientEndColor>6b2020</gradientEndColor>
@@ -18,10 +19,8 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
       <bottomBarColor>8b0000c0</bottomBarColor>
       <glowColor>00000016</glowColor>
       <systemInfoColor>DDDDDDD8</systemInfoColor>
-      <backgroundImage>./art/filter.png</backgroundImage>
-      <tilesViewName>Tiles</tilesViewName>
    </variables>
-   <include>./config.xml</include>
+    
    
    <view name="screen">
       <controllerActivity name="controllerActivity">
@@ -29,7 +28,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <size>0.085 0.025</size>
          <!--<horizontalAlignment>right</horizontalAlignment>-->
          <itemSpacing>0.003</itemSpacing>
-         <imagePath>./art/gamepad.svg</imagePath>
+         <imagePath>./assets/gamepad.svg</imagePath>
          <color>FFFFFF80</color>
          <activityColor>A0A0FFC0</activityColor>
          <hotkeyColor>FFA0A0C0</hotkeyColor>
@@ -55,7 +54,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
       <menuTextSmall name="menutextsmall">
          <fontPath>./_inc/fonts/OpenSans-Semibold.ttf</fontPath>
          <fontSize>0.028</fontSize>
-         <color>deec00</color>
+         <color>23f2f0</color>
       </menuTextSmall>
       <menuText name="menutitle">
          <fontPath>./_inc/fonts/OpenSans-Semibold.ttf</fontPath>
@@ -82,6 +81,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <iconRestart>./_inc/menu_icons/Restart.png</iconRestart>
          <iconShutdown>./_inc/menu_icons/Shutdown.png</iconShutdown>
          <iconFastShutdown>./_inc/menu_icons/Fastshutdown.png</iconFastShutdown>
+		 <iconRetroachievements>./_inc/menu_icons/Contest.png</iconRetroachievements>
       </menuIcons>
       <helpsystem name="help">
          <fontPath>./_inc/fonts/OpenSans-Semibold.ttf</fontPath>
@@ -127,7 +127,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <!-- try jpg -->
       </image>
       <text name="logoText">
-         <fontPath>./art/Cabin-Bold.ttf</fontPath>
+         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
          <color>fccbfc</color>
          <forceUppercase>true</forceUppercase>
       </text>
@@ -324,26 +324,13 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
    
    <view name="grid">
       <image name="logo">
-         <!-- try png -->
          <path>./assets/logos/${system.theme}.png</path>
-         <!-- if system2 exists, take this version -->
-         <path>./${system.theme}/art/system2.svg</path>
-         <!--<pos>0.266 0.074</pos><maxSize>0.460 0.126</maxSize>-->
          <pos>0.55 0.074</pos>
          <maxSize>0.6 0.326</maxSize>
          <origin>0 0</origin>
          <zIndex>4</zIndex>
       </image>
-      <!--
-    <image name="logo2" extra="true">
-      <path>./art/splash.svg</path>
-      <path>./${system.theme}/art/controller.svg</path>
-      <pos>0.874 0.074</pos>
-      <maxSize>0.460 0.126</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>${baseColor}</color>
-    </image>
-    -->
+
       <helpsystem name="help">
          <fontPath>./_inc/fonts/OpenSans-Semibold.ttf</fontPath>
          <fontSize>0.017</fontSize>
@@ -427,7 +414,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <visible>false</visible>
       </text>
       <image name="gridtile.favorite">
-         <path>./art/gridfav.png</path>
+         <path>./assets/gridfav.png</path>
          <pos>0.75 0</pos>
          <maxSize>0.25 0.25</maxSize>
          <!-- <horizontalAlignment>right</horizontalAlignment> -->
@@ -435,7 +422,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <color>A0A0A0A0</color>
       </image>
       <image name="gridtile.favorite:selected">
-         <path>./art/gridfav.png</path>
+         <path>./assets/gridfav.png</path>
          <color>${bottomBarColor}</color>
       </image>
    </customView>
@@ -461,7 +448,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <autoLayout>4 2</autoLayout>
       </imagegrid>
       <image name="gamelistBackground" extra="true">
-         <path>./art/filter.png</path>
+         <path>./assets/filter.png</path>
          <color>606060FF</color>
          <origin>0 0</origin>
          <pos>0.66 0.16</pos>
@@ -477,7 +464,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <size>0.30 0.05</size>
          <color>F0F0F0</color>
          <fontSize>0.042</fontSize>
-         <fontPath>./art/Cabin-Bold.ttf</fontPath>
+         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
          <alignment>center</alignment>
          <glowColor>${glowColor}</glowColor>
          <glowSize>2</glowSize>
@@ -497,12 +484,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <showSnapshotNoVideo>true</showSnapshotNoVideo>
          <showSnapshotDelay>true</showSnapshotDelay>
       </video>
-      <image name="tv_overlay" extra="true">
-         <pos>0.68 0.25</pos>
-         <size>0.30 0.40</size>
-         <path>./art/tv.png</path>
-         <zIndex>140</zIndex>
-      </image>
+
       <text name="md_description">
          <pos>0.68 0.678</pos>
          <size>0.30 0.20</size>
@@ -645,11 +627,11 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <scrollLoop>true</scrollLoop>
       </imagegrid>
       <image name="gamelistBackground" extra="true">
-         <path>./art/filter.png</path>
+         <path>./assets/filter.png</path>
          <color>606060FF</color>
          <origin>0 0</origin>
-         <pos>0.66 0.16</pos>
-         <size>0.34 0.774</size>
+         <pos>0.665 0.54</pos>
+         <size>0.329 0.394</size>
          <zIndex>12</zIndex>
       </image>
       <text name="md_name">
@@ -658,7 +640,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <size>0.50 0.05</size>
          <color>F0F0F0</color>
          <fontSize>0.042</fontSize>
-         <fontPath>./art/Cabin-Bold.ttf</fontPath>
+         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
          <glowColor>00000016</glowColor>
          <glowSize>1</glowSize>
          <alignment>left</alignment>
@@ -678,12 +660,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <showSnapshotNoVideo>true</showSnapshotNoVideo>
          <showSnapshotDelay>true</showSnapshotDelay>
       </video>
-      <image name="tv_overlay" extra="true">
-         <pos>0.68 0.25</pos>
-         <size>0.30 0.40</size>
-         <path>./art/tv.png</path>
-         <zIndex>140</zIndex>
-      </image>
+
       <text name="md_description">
          <pos>0.05 0.758</pos>
          <size>0.50 0.18</size>
@@ -698,6 +675,96 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
       </text>
    </customView>
    
+    <customView name="Carousel Poster" inherits="Carousel" displayName="${carouselposterViewName}">
+      <imagegrid name="gamegrid">
+         <autoLayout>5 1</autoLayout>
+         <autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
+         <pos>0 0.42</pos>
+         <size>0.1 0.30</size>
+         <scrollDirection>horizontal</scrollDirection>
+		 <size>1.2 0.774</size>
+         <centerSelection>true</centerSelection>
+      </imagegrid>
+	  
+      <text name="gridtile">
+         <visible>false</visible>
+      </text>
+
+      <gridtile name="selected">
+         <size>0.230 0.259</size>
+         <padding>5 5</padding>
+         <imageColor>FFFFFFFF</imageColor>
+         <backgroundCornerSize>0 0</backgroundCornerSize>
+         <backgroundCornerSize>0.05</backgroundCornerSize>
+      </gridtile>
+      <ninepatch name="gridtile.background:selected">
+         <animateColor>526667</animateColor>
+         <animateColorTime>650</animateColorTime>
+      </ninepatch>
+
+      <text name="md_name">
+         <color>ffffffff</color>
+         <pos>0.05 0.638</pos>
+         <size>0.50 0.05</size>
+         <color>F0F0F0</color>
+         <fontSize>0.052</fontSize>
+         <fontPath>./assets/Circular Std Black.ttf</fontPath>
+         <glowColor>00000016</glowColor>
+         <glowSize>1</glowSize>
+         <alignment>left</alignment>
+         <zIndex>0</zIndex>
+      </text>
+	  
+      <text name="md_developer">
+         <color>EFEFFF</color>
+         <pos>0.70 0.875</pos>
+         <size>0.30 0.05</size>
+         <alignment>left</alignment>
+         <fontSize>0.025</fontSize>
+      </text>
+      <video name="md_video">
+         <pos>0.73 0.275</pos>
+         <maxSize>0.40 0.40</maxSize>
+         <origin>0.5 0.5</origin>
+         <delay>1</delay>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+      </video>
+
+      <text name="md_description">
+         <pos>0.025 0.26</pos>
+         <size>0.45 0.22</size>
+         <fontSize>0.025</fontSize>
+         <color>FFFFFF</color>
+         <glowColor>00000016</glowColor>
+         <glowSize>2</glowSize>
+         <alignment>left</alignment>
+      </text>
+
+      <image name="md_marquee">
+         <pos>0.155 0.16</pos>
+         <size>0.25 0</size>
+         <zIndex>36</zIndex>
+      </image>
+      <text name="md_rating">
+         <pos>0.88 0.886</pos>
+         <size>0.05 0.03</size>
+      </text>
+      <image name="logo">
+         <pos>0.72 0.08</pos>
+         <maxSize>0.24 0.16</maxSize>
+      </image>
+
+      <image name="md_image">
+         <color>303030FF</color>
+         <tile>true</tile>
+         <pos>0 0</pos>
+         <origin>0 0</origin>
+         <size>1 1</size>
+         <zIndex>10</zIndex>
+      </image>
+   </customView>   
+   
    <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
       <imagegrid name="gamegrid">
          <autoLayout>3 2</autoLayout>
@@ -709,7 +776,6 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
       </imagegrid>
       <gridtile name="default">
          <size>0.225 0.254</size>
-         <backgroundImage />
          <backgroundCenterColor>FFFFFF20</backgroundCenterColor>
          <backgroundEdgeColor>FFFFFF20</backgroundEdgeColor>
          <padding>1 1</padding>
@@ -732,13 +798,7 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
       <image name="gridtile.image">
          <roundCorners>0.06</roundCorners>
       </image>
-      <!--
-  <image name="gridtile.overlay">
-      <path>./art/overlay.png</path>
-      <roundCorners>0.06</roundCorners>
-      <color>FFFFFFA0</color>
-    </image>
--->
+
       <text name="gridtile">
          <color>D0D0D0D0</color>
          <backgroundColor>00000000</backgroundColor>
@@ -764,16 +824,6 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
       <image name="gridtile.favorite:selected">
          <color>FFFF00D0</color>
       </image>
-      <!--
-    <image name="gridtile.overlay">
-      <path>./art/scanlines.png</path>
-      <tile>true</tile>
-      <color>FFFFFF90</color>
-      <pos>0 0</pos>
-      <size>1 1</size>
-      <origin>0 0</origin>
-    </image>  
--->
    </customView>
    
    <customView name="Tiles + Video" inherits="Tiles" displayName="${tilesVideoViewName}">
@@ -813,11 +863,226 @@ Código baseado no tema HyperTocera V1 - The Mini Cake TV
          <pos>0 0</pos>
          <size>1 1</size>
          <fontSize>0.040</fontSize>
-         <fontPath>./art/Cabin-Bold.ttf</fontPath>
+         <fontPath>./_inc/fonts/Cabin-Bold.ttf</fontPath>
          <padding>0.1 0</padding>
       </text>
    </customView>
-  
+ 
+   <customView name="Fanart" inherits="grid" tinyScreen="false" displayName="${fanartViewName}">
+      <text name="md_name">
+         <color>ffffffff</color>
+         <pos>0.025 0.16</pos>
+         <size>0.92 0.10</size>
+         <alignment>left</alignment>
+         <glowColor>00000016</glowColor>
+         <glowSize>4</glowSize>
+         <fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+         <zIndex>0</zIndex>
+      </text>
+
+      <imagegrid name="gamegrid">
+         <pos>0.72 0</pos>
+         <size>0.3 1</size>
+         <scrollDirection>vertical</scrollDirection>
+         <autoLayout>1 7</autoLayout>
+         <autoLayoutSelectedZoom>1.30</autoLayoutSelectedZoom>
+         <margin>0.005 0.010</margin>
+         <centerSelection>true</centerSelection>
+         <scrollLoop>true</scrollLoop>
+	  <imageSource>marquee</imageSource>
+
+      </imagegrid>
+      <gridtile name="default">
+         <padding>64 16</padding>
+         <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+         <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+         <imageSizeMode>maxSize</imageSizeMode>
+         <imageColor>FFFFFFAA</imageColor>
+         <reflexion>0.11 0.0</reflexion>
+      </gridtile>
+      <gridtile name="selected">
+         <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+         <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+         <padding>64 16</padding>
+      </gridtile>
+      <text name="gridtile">
+         <color>80808080</color>
+         <fontSize>0.016</fontSize>
+         <size>1 0</size>
+      </text>
+      <text name="gridtile_selected">
+         <color>FFFFFF00</color>
+         <fontSize>0.035</fontSize>
+         <size>1 0</size>
+      </text>
+      <image name="art2" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>6</zIndex>
+      </image>
+      <text name="md_description">
+         <pos>0.025 0.36</pos>
+         <size>0.32 0.22</size>
+         <fontSize>0.025</fontSize>
+         <color>FFFFFF</color>
+         <glowColor>00000016</glowColor>
+         <glowSize>1</glowSize>
+         <alignment>left</alignment>
+      </text>
+     <video name="md_video">
+         <pos>0.025 0.62</pos>
+         <minSize>0.30 0.30</minSize>
+         <origin>0 0</origin>
+         <delay>0.2</delay>
+         <showSnapshotNoVideo>false</showSnapshotNoVideo>
+         <showSnapshotDelay>false</showSnapshotDelay>
+         <zIndex>6</zIndex>
+      </video>
+
+      <image name="logo">
+         <zIndex>0</zIndex>
+      </image>
+
+      <image name="md_marquee">
+         <pos>0.155 0.16</pos>
+         <size>0.25 0</size>
+         <zIndex>36</zIndex>
+      </image>
+
+      <rating name="md_rating">
+         <pos>0.04 0.88</pos>
+         <size>0.05 0.03</size>
+         <color>FFFFFF</color>
+         <unfilledColor>808080</unfilledColor>
+         <fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+      </rating>
+
+      <image name="md_image">
+	     <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>4</zIndex>
+      </image>
+
+      <text name="md_publisher">
+         <color>ffffff00</color>
+         <fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+         <pos>0.42 0.63</pos>
+      </text>
+   </customView>
+
+   <customView name="Fanart (Full Video + Logo)" inherits="grid" tinyScreen="false" displayName="${fanartvlViewName}">
+      <text name="md_name">
+         <color>ffffffff</color>
+         <pos>0.025 0.16</pos>
+         <size>0.92 0.10</size>
+         <alignment>left</alignment>
+         <glowColor>00000016</glowColor>
+         <glowSize>4</glowSize>
+         <fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+         <zIndex>0</zIndex>
+      </text>
+      <text name="md_developer">
+         <pos>0.12 0.65</pos>
+         <size>0.42 0.05</size>
+         <fontSize>0.025</fontSize>
+         <color>FFFFFF</color>
+         <glowColor>00000016</glowColor>
+         <glowSize>1</glowSize>
+         <alignment>left</alignment>
+      </text>
+      <imagegrid name="gamegrid">
+         <pos>0.72 0</pos>
+         <size>0.3 1</size>
+         <scrollDirection>vertical</scrollDirection>
+         <autoLayout>1 7</autoLayout>
+         <autoLayoutSelectedZoom>1.30</autoLayoutSelectedZoom>
+         <margin>0.005 0.010</margin>
+         <centerSelection>true</centerSelection>
+         <scrollLoop>true</scrollLoop>
+	  <imageSource>marquee</imageSource>
+      </imagegrid>
+      <gridtile name="default">
+         <padding>64 16</padding>
+         <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+         <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+         <imageSizeMode>maxSize</imageSizeMode>
+         <imageColor>FFFFFFAA</imageColor>
+         <reflexion>0.11 0.0</reflexion>
+      </gridtile>
+      <gridtile name="selected">
+         <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+         <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+         <padding>64 16</padding>
+      </gridtile>
+      <text name="gridtile">
+         <color>80808080</color>
+         <fontSize>0.016</fontSize>
+         <size>1 0</size>
+      </text>
+      <text name="gridtile_selected">
+         <color>FFFFFF00</color>
+         <fontSize>0.035</fontSize>
+         <size>1 0</size>
+      </text>
+      <image name="art2" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>6</zIndex>
+      </image>
+      <text name="md_description">
+         <pos>0.025 0.36</pos>
+         <size>0.32 0.29</size>
+         <fontSize>0.025</fontSize>
+         <color>FFFFFF</color>
+         <glowColor>00000016</glowColor>
+         <glowSize>1</glowSize>
+         <alignment>left</alignment>
+      </text>
+     <video name="md_video">
+         <pos>0 0</pos>
+         <minSize>1 1</minSize>
+         <origin>0 0</origin>
+         <delay>1</delay>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+         <zIndex>5</zIndex>
+      </video>
+
+      <image name="md_marquee">
+         <pos>0.155 0.16</pos>
+         <size>0.25 0</size>
+         <zIndex>36</zIndex>
+      </image>
+
+      <rating name="md_rating">
+         <pos>0.02 0.66</pos>
+         <size>0.05 0.03</size>
+         <color>FFFFFF</color>
+         <unfilledColor>808080</unfilledColor>
+         <fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+      </rating>
+
+      <image name="logo">
+         <zIndex>0</zIndex>
+      </image>
+
+      <image name="md_image">
+	     <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>4</zIndex>
+      </image>
+
+      <text name="md_publisher">
+         <color>ffffff00</color>
+         <fontPath>./_inc/fonts/Homizio.ttf</fontPath>
+         <pos>0.42 0.63</pos>
+      </text>
+   </customView>
+ 
    <include tinyScreen="true">./gpicase.xml</include>
    <view name="system" ifHelpPrompts="false">
       <image name="BottomBar" extra="true">

@@ -1,13 +1,21 @@
 <theme>
-    <formatVersion>4</formatVersion>
-	<include subset="colorset" name="1-Default BG">./colorsets/default.xml</include>
-	<include subset="colorset" name="2-Dark BG">./colorsets/dark.xml</include>
+    <formatVersion>7</formatVersion>
+
+   <include>./_inc/lang/english.xml</include>
+	<include lang="es">./_inc/lang/espanol.xml</include>
+	<include lang="es_MX">./_inc/lang/espanol.xml</include>
+	<include lang="eu">./_inc/lang/espanol.xml</include>
+	<include lang="fr">./_inc/lang/francais.xml</include> 
+	<include lang="pt">./_inc/lang/portugues.xml</include>
+
+	<include subset="colorset" name="Default BG" displayName="${defaultbg}">./colorsets/default.xml</include>
+	<include subset="colorset" name="Dark BG" displayName="${darkbg}">./colorsets/dark.xml</include>
 		
-	<include subset="iconset" name="1-Default">./iconsets/snes.xml</include>
-	<include subset="iconset" name="2-ARCADE">./iconsets/arcade.xml</include>
+	<include subset="iconset" name="Default" displayName="${default}">./iconsets/snes.xml</include>
+	<include subset="iconset" name="ARCADE" displayName="${arcade}">./iconsets/arcade.xml</include>
 	
-	<include subset="systemview" name="Horizontal Menu">./systemview/1.xml</include>
-	<include subset="systemview" name="Vertical Carrossel">./systemview/2.xml</include>
-	<include subset="systemview" name="Vertical Menu">./systemview/3.xml</include>
-	
+	<include subset="systemview" name="Horizontal Menu" displayName="${horizontal}">./systemview/1.xml</include>
+	<include subset="systemview" name="Vertical Carrossel" displayName="${verticalc}">./systemview/2.xml</include>
+	<include subset="systemview" name="Vertical Menu" displayName="${verticalm}">./systemview/3.xml</include>
+
 </theme>
